@@ -13,8 +13,8 @@ class App < Sinatra::Base
   
   post '/checkout' do
     @sessions = session
-    item = params["purchace_item"]
-    @sessions[:purchace_item] = item
+    item = params["item"]
+    @sessions[:item] = item
   end 
   
   
